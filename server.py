@@ -8,7 +8,7 @@ def create_socket():
         global host
         global port 
         global s
-        hsot = ""
+        host = ""
         port = 9999
         s = socket.socket()
     except socket.error as msg:
@@ -52,6 +52,7 @@ def main():
     create_socket()
     bind_socket()
     socket_accept()
+
 
 if __name__ =="__main__":
     main()
